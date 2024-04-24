@@ -4,7 +4,7 @@ Dependency Injection project in Python
 This Python project demonstrates dependency injection using constructor injection.
 It includes an API with two interface classes: DAO and Service.
 The DAO interface simulates data access, while the Service interface simulates data computation.
-Two versions (MAS and HR) implement constructor injection from DAO into Service layer.
+Two versions (mas and hr) implement constructor injection from DAO into Service layer.
 
 DAOImplHR Class Documentation
 
@@ -24,7 +24,7 @@ from src.api.DAO import DAO
 
 class DAOImplHR(DAO):
     """
-    Concrete implementation of the DAO interface for version HR of the project.
+    Concrete implementation of the DAO interface for version hr of the project.
     This implementation retrieves data from the second data source.
     """
 
