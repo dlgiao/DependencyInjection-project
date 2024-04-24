@@ -6,7 +6,7 @@
  * @version 0.1
  * @since 0.1
  */
-const DAO = require("../api/DAO")
+const DAO = require("../api/DAO");
 
 class DAOImplMAS extends DAO {
     /**
