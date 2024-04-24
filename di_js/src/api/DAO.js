@@ -1,5 +1,7 @@
 /**
- * Represents a Data Access Object (DAO) for accessing data.
+ * Interface for Data Access Object (DAO).
+ *
+ * Implement this interface to provide methods for accessing data.
  *
  * @author Dac Linh Giao NGUYEN
  * @version 0.1
