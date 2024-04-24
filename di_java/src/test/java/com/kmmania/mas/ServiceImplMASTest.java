@@ -38,7 +38,7 @@ public class ServiceImplMASTest {
         // Then
         verify(daoMock, times(1)).getData();
         assertThat(resultDao).isEqualTo(17.5); // Expected MAS value provided by DAO
-        verify(serviceMock, times(1)).getClass();
+        verify(serviceMock, times(1)).compute();
         assertThat(resultMas).isEqualTo(12.25); // Expected result is 70% of 17.5
     }
 }
