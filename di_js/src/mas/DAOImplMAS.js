@@ -10,7 +10,7 @@ const DAO = require("../api/DAO")
 
 class DAOImplMAS extends DAO {
     /**
-     * Retrieves data from data source 1.
+     * Retrieves the Maximal Aerobic Speed (MAS) from the MAS data source.
      *
      * @returns {number} The retrieved data representing a speed.
      */

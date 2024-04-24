@@ -22,7 +22,7 @@ class ServiceImplMAS extends Service {
     }
 
     /**
-     * Computes 70% of the retrieved data from the DAO.
+     * Computes 70% of the Maximal Aerobic Speed.
      *
      * @returns {number} The result of the computation.
      */
