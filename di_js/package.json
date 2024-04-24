@@ -9,5 +9,9 @@
   "keywords": [],
   "author": "Dac Linh Giao NGUYEN",
   "license": "MIT",
-  "description": "Implementation of dependency injection in javascript"
+  "description": "Implementation of dependency injection in javascript",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0"
+  }
 }
