@@ -1,12 +1,13 @@
 {
   "name": "di_js",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "0.1.0",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "test": "npx jest"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "author": "Dac Linh Giao NGUYEN",
+  "license": "MIT",
+  "description": "Implementation of dependency injection in javascript"
 }
