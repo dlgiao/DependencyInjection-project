@@ -13,7 +13,13 @@ Each version of the DAO and Service is implemented separately to showcase the fl
 
 ## Project Structure
 
-The project is structured as follows:
+- `DAO`: Defines a Data Access Object interface .
+- `Service`: Represents a sprinter athlete, utilizing inheritance.
+- `DAOImplMAS`: Represents an athlete specializing in throwing events, utilizing composition.
+- `ServiceImplMAS`: Defines an interface for retrieving an athlete's specialty.
+- `DAOImplHR`: Implements the `AthleteInterface`.
+- `ServiceImplHR`: Represents an athlete specializing in distance running, utilizing composition with interfaces.
+- `Main`: Contains the `main` method to demonstrate the usage of different athlete classes.
 
 ## Usage
 
@@ -41,6 +47,10 @@ This project requires:
 
 - Java 8 or higher
 - Apache Maven
+
+## Contributions
+
+Contributions to enhance and expand this project are welcome. Feel free to fork the repository, make your changes, and submit a pull request.
 
 ## License
 
