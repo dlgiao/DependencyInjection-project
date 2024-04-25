@@ -13,7 +13,6 @@ type Dao interface {
 
 /**
  * Interface for a service that performs computation based on data provided by a DAO (Data Access Object).
- *
  * Implement this interface to provide methods for computing data.
  */
 
