@@ -11,8 +11,11 @@ package com.kmmania.hr
 import com.kmmania.api.DAO
 
 /**
- * Implementation of DAO interface for HR (heart rate) data.
+ * Implementation of the [DAO] interface for HR (heart rate) data.
  *
+ * This class provides functionality to retrieve the maximum heart rate from the HR data source.
+ *
+ * @constructor Creates a [DAOImplHR] instance.
  * @author Dac Linh Giao NGUYEN
  * @since 0.1
  * @see DAO

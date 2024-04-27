@@ -13,6 +13,7 @@ import com.kmmania.api.DAO
 /**
  * Implementation of DAO interface for MAS (Maximal Aerobic Speed) data.
  *
+ * @constructor Creates a [DAOImplMAS] instance.
  * @author Dac Linh Giao NGUYEN
  * @since 0.1
  * @see DAO

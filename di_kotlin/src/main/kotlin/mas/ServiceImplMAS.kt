@@ -12,10 +12,12 @@ import com.kmmania.api.DAO
 import com.kmmania.api.Service
 
 /**
- * Implementation of Service interface for MAS (Maximal Aerobic Speed) data.
+ * Implementation of the [Service] interface for MAS (Maximal Aerobic Speed) data.
  *
  * This service computes a percentage of the Maximal Aerobic Speed.
  *
+ * @property dao the DAO implementation providing access to MAS data.
+ * @constructor Creates a [ServiceImplMAS] with the specified DAO implementation.
  * @param dao the DAO implementation providing access to MAS data.
  * @author Dac Linh Giao NGUYEN
  * @since 0.1

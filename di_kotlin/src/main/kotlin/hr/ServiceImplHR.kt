@@ -12,10 +12,12 @@ import com.kmmania.api.DAO
 import com.kmmania.api.Service
 
 /**
- * Implementation of Service interface for HR data.
+ * Implementation of the [Service] interface for HR data.
  *
  * This service computes a percentage of the maximum heart rate.
  *
+ * @property dao the DAO implementation providing access to HR data.
+ * @constructor Creates a [ServiceImplHR] with the specified DAO implementation.
  * @param dao the DAO implementation providing access to HR data.
  * @author Dac Linh Giao NGUYEN
  * @since 0.1
