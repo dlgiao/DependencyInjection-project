@@ -20,8 +20,7 @@ type ServiceImplHr struct {
 	Dao api.Dao
 }
 
-// Compute computes 75% of the maximum heart rate retrieved from the data source and returns
-// it as a float64.
+// Compute computes 75% of the maximum heart rate retrieved from the data source and returns it as a float64.
 func (service *ServiceImplHr) Compute() float64 {
 	fmt.Println("Service computes 75% of max heart rate")
 	data := service.Dao.GetData()
