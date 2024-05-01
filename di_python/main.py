@@ -48,7 +48,7 @@ def create_hr_service():
 
 if __name__ == '__main__':
     """
-    Main entry point of the script.
+    Main entry point of the programme.
     """
     create_mas_service()
     create_hr_service()
