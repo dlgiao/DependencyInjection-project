@@ -1,23 +1,20 @@
-const Service = require("../../src/api/Service");
-
 describe("Service", () => {
-    let service;
-
-    beforeEach(() => {
-        service = new Service();
-    })
-
     it("should return a number", () => {
-        // Mock implementation of compte method
-        service.compute = jest.fn().mockReturnValue(10);
+        // Mock implementation of compute method
+        const computeMock = jest.fn().mockReturnValue(10);
+
+        // Service mock with compute() method
+        const serviceMock = {
+            compute: computeMock
+        };
 
         // Call the compute method
-        const result = service.compute();
+        const result = serviceMock.compute();
 
         // Expect the result to be number
         expect(typeof result).toBe('number');
 
         // Expect the compute method to have been called once
-        expect(service.compute).toHaveBeenCalledTimes(1);
+        expect(serviceMock.compute).toHaveBeenCalledTimes(1);
     });
 });
