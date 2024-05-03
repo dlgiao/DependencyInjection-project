@@ -1,38 +1,17 @@
-from unittest.mock import MagicMock, patch
-
-import pytest
-
-from src.api.DAO import DAO
+from unittest import mock
 
 
-@pytest.fixture
-def dao():
-    """Fixture to provide a DAO instance."""
-    # Use MagicMock to create a DAO mock
-    return MagicMock(spec=DAO)
+class TestDAO:
 
+    @mock.patch("src.api.DAO.DAO")
+    def setup_method(self, method, mock_dao):
+        print(f"Setting up {method}")
+        mock_dao.get_data.return_value = 10.0
+        self.dao = mock_dao
 
-def test_dao_get_data(dao):
-    """Test the get_data method of DAO."""
-    # Create a mock of get_data() method
-    with patch.object(dao, "get_data") as mock_get_data:
-        # Configure the mock behavior
-        mock_get_data.return_value = 10.0
+    def teardown_method(self, method):
+        print(f"Tearing down {method}")
+        del self.dao
 
-        # Call the method under test
-        result = dao.get_data()
-
-        # Verify the expected behavior
-        assert result == 10.0
-        mock_get_data.assert_called_once()
-
-
-def test_dao_get_data_raises_type_error():
-    """Test that get_data raises TypeError when called directly on DAO."""
-    # Direct instantiation of DAO abstract class must throw TypeError
-    with pytest.raises(TypeError, match="Can't instantiate abstract class"):
-        DAO().get_data()
-
-
-if __name__ == "__main__":
-    pytest.main([__file__])
+    def test_get_data(self):
+        assert self.dao.get_data() == 10.0

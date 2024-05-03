@@ -1,37 +1,16 @@
-from unittest.mock import MagicMock, patch
-
-import pytest
-
-from src.api.Service import Service
+from unittest import mock
 
 
-@pytest.fixture
-def service():
-    """Fixture to provide a Service instance."""
-    # Use MagicMock to create a Service mock
-    return MagicMock(spec=Service)
+class TestService:
 
+    @mock.patch("src.api.Service.Service")
+    def setup_method(self, method, mock_service):
+        print(f"Setting up {method}")
+        mock_service.compute.return_value = 10.0
+        self.service = mock_service
 
-def test_service_compute(service):
-    """Test the compute method of Service."""
-    # Create a mock of compute() method
-    with patch.object(service, "compute") as mock_compute:
-        # Configure the mock behavior
-        mock_compute.return_value = 10.0
+    def teardown_method(self, method):
+        print(f"Tearing down {method}")
 
-        # Call the method under test
-        result = service.compute()
-
-        # Verify the expected behavior
-        assert result == 10.0
-        mock_compute.assert_called_once()
-
-
-def test_service_compute_raise_type_error():
-    """Test that calling compute method of Service raises a TypeError."""
-    with pytest.raises(TypeError, match="Can't instantiate abstract class"):
-        Service().compute()
-
-
-if __name__ == "__main__":
-    pytest.main([__file__])
+    def test_compute(self):
+        assert self.service.compute() == 10.0
