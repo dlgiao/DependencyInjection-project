@@ -1,21 +1,18 @@
 const ServiceImplHR = require("../../src/hr/ServiceImplHR");
-const DAOImplHR = require("../../src/hr/DAOImplHR");
 
-// Mock DAO
-class MockDAO extends DAOImplHR {
-    getData() {
-        // Mocking data retrieval
-        return 185;
+const MockDao = jest.fn().mockImplementation(() => {
+    return {
+        getData: jest.fn().mockReturnValue(185)
     }
-}
+});
 
 describe("ServiceImplHR", () => {
+    let mockDao;
     let service;
 
     beforeEach(() => {
-        // Using mocked DAO for testing
-        const dao = new MockDAO();
-        service = new ServiceImplHR(dao);
+        mockDao = new MockDao();
+        service = new ServiceImplHR(mockDao);
     });
 
     it("should compute 75% of the retrieved data", () => {
