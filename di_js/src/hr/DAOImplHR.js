@@ -2,7 +2,6 @@
  * Implementation of DAO interface for HR (heart rate) data.
  *
  * @author Dac Linh Giao NGUYEN
- * @extends DAO
  * @version 0.1
  * @since 0.1
  */

@@ -4,7 +4,6 @@
  * This service computes a percentage of the maximum heart rate.
  *
  * @author Dac Linh Giao NGUYEN
- * @extends Service
  * @version 0.1
  * @since 0.1
  */
