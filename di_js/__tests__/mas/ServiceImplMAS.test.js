@@ -1,21 +1,18 @@
 const ServiceImplMAS = require("../../src/mas/ServiceImplMAS");
-const DAOImplMAS = require("../../src/mas/DAOImplMAS");
 
-// Mock DAO
-class MockDAO extends DAOImplMAS {
-    getData() {
-        // Mocking data retrieval
-        return 17.5;
+const MockDao = jest.fn().mockImplementation(() => {
+    return {
+        getData: jest.fn().mockReturnValue(17.5)
     }
-}
+});
 
 describe("ServiceImplMAS", () => {
+    let mockDao;
     let service;
 
     beforeEach(() => {
-        // Using mocked DAO for testing
-        const dao = new MockDAO();
-        service = new ServiceImplMAS(dao);
+        mockDao = new MockDao()
+        service = new ServiceImplMAS(mockDao);
     });
 
     it("should compute 75% of the retrieved data", () => {
