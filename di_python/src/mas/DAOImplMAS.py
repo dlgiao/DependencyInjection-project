@@ -11,12 +11,13 @@ DAOImplMAS Class Documentation
 This Python class implements the DAO interface to provide data retrieval functionality for version MAS
 of the project.
 
-Author: Dac Linh Giao NGUYEN
-Date: 2024
-
 Usage:
     - Instantiate DAOImplMAS to access data from the MAS data source.
     - Call the get_data method to retrieve data.
+
+Author: Dac Linh Giao NGUYEN
+Date: 2024
+
 """
 
 from src.api.DAO import DAO

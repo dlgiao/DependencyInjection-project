@@ -11,12 +11,13 @@ ServiceImplHR Class Documentation
 This Python class implements the Service interface to provide computation functionality for version
 hr of the project.
 
-Author: Dac Linh Giao NGUYEN
-Date: 2024
-
 Usage:
     - Instantiate ServiceImplHR with a DAO instance to perform computations using data from the HR data source.
     - Call the compute method to perform computation.
+
+Author: Dac Linh Giao NGUYEN
+Date: 2024
+
 """
 
 from src.api.Service import Service

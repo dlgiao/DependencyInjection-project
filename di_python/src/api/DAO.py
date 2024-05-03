@@ -11,12 +11,13 @@ DAO Interface Documentation
 This Python interface defines the structure for a Data Access Object (DAO) responsible for data
 retrieval operations.
 
-Author: Dac Linh Giao NGUYEN
-Date: 2024
-
 Usage:
     - Implement a concrete class that inherits from this interface.
     - Override the get_data method to define data retrieval logic.
+
+Author: Dac Linh Giao NGUYEN
+Date: 2024
+
 """
 
 from abc import ABC, abstractmethod

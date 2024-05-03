@@ -11,12 +11,13 @@ ServiceImplMAS Class Documentation
 This Python class implements the Service interface to provide computation functionality for version MAS
 of the project.
 
-Author: Dac Linh Giao NGUYEN
-Date: 2024
-
 Usage:
     - Instantiate ServiceImplMAS with a DAO instance to perform computations using data from the MAS data source.
     - Call the compute method to perform computation.
+
+Author: Dac Linh Giao NGUYEN
+Date: 2024
+
 """
 
 from src.api.Service import Service

@@ -11,12 +11,13 @@ DAOImplHR Class Documentation
 This Python class implements the DAO interface to provide data retrieval functionality for version
 hr of the project.
 
-Author: Dac Linh Giao NGUYEN
-Date: 2024
-
 Usage:
     - Instantiate DAOImplHR to access data from the HR data source.
     - Call the get_data method to retrieve data.
+
+Author: Dac Linh Giao NGUYEN
+Date: 2024
+
 """
 
 from src.api.DAO import DAO

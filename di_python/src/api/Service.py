@@ -10,12 +10,13 @@ Service Interface Documentation
 
 This Python interface defines the structure for a service responsible for data computation.
 
-Author: Dac Linh Giao NGUYEN
-Date: 2024
-
 Usage:
     - Implement a concrete class that inherits from this interface.
     - Override the compute method to define computation logic.
+
+Author: Dac Linh Giao NGUYEN
+Date: 2024
+
 """
 
 from abc import ABC, abstractmethod

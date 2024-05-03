@@ -5,14 +5,11 @@ This Python script demonstrates the usage of DAO and Service implementations for
 of a project.
 It showcases how dependency injection allows for swapping implementations seamlessly.
 
-Author: Dac Linh Giao NGUYEN
-Date: 2024
-
 Usage:
     - Run the script to see the computation results for both versions (MAS and HR) of the project.
 
-Example:
-    python main.py
+Author: Dac Linh Giao NGUYEN
+Date: 2024
 
 """
 
