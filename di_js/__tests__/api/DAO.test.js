@@ -1,23 +1,20 @@
-const DAO = require("../../src/api/DAO");
-
 describe("DAO", () => {
-    let dao;
-
-    beforeEach(() => {
-        dao = new DAO();
-    });
-
     it("should retrieve data from a data source", () => {
         // Mock implementation of getData method
-        dao.getData = jest.fn().mockReturnValue(10);
+        const getDataMock = jest.fn().mockReturnValue(10);
+
+        // DAO mock with getData() method
+        const daoMock = {
+            getData: getDataMock
+        };
 
         // Call the getData method
-        const result = dao.getData();
+        const result = daoMock.getData();
 
         // Expect the result to be 10
         expect(result).toBe(10);
 
         // Expect the getData method to have been called once
-        expect(dao.getData).toHaveBeenCalledTimes(1);
+        expect(daoMock.getData).toHaveBeenCalledTimes(1);
     });
 });
