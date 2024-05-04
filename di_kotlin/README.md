@@ -22,7 +22,6 @@ The project is structured as follows:
 - `DAOImplHR`: Retrieves a HR max (heart rate) data from a DAO.
 - `ServiceImplHR`: Defines the service computes a percentage of the HR max.
 - `Main`: Contains the `main` method to demonstrate the usage of different use cases.
-...
 
 ## Usage
 
