@@ -1,38 +1,55 @@
-# Dependency Injection Example
+# Dependency Injection Project
 
-This Python project demonstrates dependency injection using constructor injection. It includes an API with two interface classes: DAO and Service. The DAO interface simulates data access, while the Service interface simulates data computation. Two versions (V1 and V2) implement constructor injection from DAO into Service layer.
+This project demonstrates the concept of Dependency Injection (DI) in Python using pip.
+
+## Overview
+
+The project consists of two versions (MAS and HR) of DAO (Data Access Object) and Service implementations.
+
+- **DAO (Data Access Object)**: Interface representing data access.
+- **Service**: Interface representing a service performing calculations based on data provided by a DAO.
+
+Each version of the DAO and Service is implemented separately to showcase the flexibility and ease of swapping dependencies using DI.
 
 ## Project Structure
 
 The project is structured as follows:
 
-- `V1/`: Contains version 1 implementations.
-  - `dao/`: Contains DAO implementation for version 1.
-  - `service/`: Contains Service implementation for version 1.
-- `V2/`: Contains version 2 implementations.
-  - `dao/`: Contains DAO implementation for version 2.
-  - `service/`: Contains Service implementation for version 2.
-- `api/`: Contains the interface classes.
-  - `DAO.py`: Defines the DAO interface.
-  - `Service.py`: Defines the Service interface.
-- `main.py`: Script demonstrating the usage of different versions.
+- `DAO`: Defines a Data Access Object interface .
+- `Service`: Defines a service that performs computation based on data provided by a DAO (Data Access Object).
+- `DAOImplMAS`: Retrieves a MAS (Maximal Aerobic Speed) data from a DAO.
+- `ServiceImplMAS`: Defines the service computes a percentage of the Maximal Aerobic Speed.
+- `DAOImplHR`: Retrieves a HR max (heart rate) data from a DAO.
+- `ServiceImplHR`: Defines the service computes a percentage of the HR max.
+- `main`: Contains the `main` method to demonstrate the usage of different use cases.
 
 ## Usage
 
-To run the script and see the computation results for both versions (V1 and V2) of the project, execute:
+To run the project, follow these steps:
+
+1. Clone this repository.
+2. Navigate to the root directory of the project.
+3. Run the following command:
+
+```bash
+pip install -r requirements.txt
+```
 
 ```bash
 python main.py
 ```
-## Versions
+This will execute the main function in the main.py file, demonstrating the usage of different versions (MAS and HR) of DAO and Service implementations.
 
-### Version 1 (V1):
-- **DAO implementation** (DAOImplV1) retrieves data from data source 1.
-- **Service implementation** (ServiceImplV1) computes data based on data retrieved from DAOImplV1.
+## Dependencies
 
-### Version 2 (V2):
-- **DAO implementation** (DAOImplV2) retrieves data from data source 2.
-- **Service implementation** (ServiceImplV2) computes data based on data retrieved from DAOImplV2.
+This project requires:
+
+- Python 3
+- pip
+
+## Contributions
+
+Contributions to enhance and expand this project are welcome. Feel free to fork the repository, make your changes, and submit a pull request.
 
 ## License
 

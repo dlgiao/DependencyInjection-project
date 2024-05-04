@@ -15,18 +15,13 @@ Each data source is implemented separately to showcase the flexibility of depend
 
 The project is structured as follows:
 
-di_go/
-├── hr/
-│ ├── dao_impl_hr.go
-│ └── service_impl_hr.go
-├── mas/
-│ ├── dao_impl_mas.go
-│ └── service_impl_mas.go
-├── api/
-│ ├── dao.go
-│ └── service.go
-└── main.go
-
+- `dao`: Defines a Data Access Object interface .
+- `service`: Defines a service that performs computation based on data provided by a DAO (Data Access Object).
+- `dao_impl_mas`: Retrieves a MAS (Maximal Aerobic Speed) data from a DAO.
+- `service_impl_mas`: Defines the service computes a percentage of the Maximal Aerobic Speed.
+- `dao_impl_hr`: Retrieves a HR max (heart rate) data from a DAO.
+- `service_impl_hr`: Defines the service computes a percentage of the HR max.
+- `main`: Contains the `main` method to demonstrate the usage of different use cases.
 
 ## Usage
 
@@ -45,6 +40,10 @@ This will execute the main function in main.go, demonstrating the usage of diffe
 ## Dependencies
 
 This project has no external dependencies beyond Go itself.
+
+## Contributions
+
+Contributions to enhance and expand this project are welcome. Feel free to fork the repository, make your changes, and submit a pull request.
 
 ## License
 

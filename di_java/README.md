@@ -1,4 +1,4 @@
-# Dependency Injection Example Project
+# Dependency Injection Project
 
 This project demonstrates the concept of Dependency Injection (DI) in Java using Maven.
 
@@ -12,6 +12,8 @@ The project consists of two versions (MAS and HR) of DAO (Data Access Object) an
 Each version of the DAO and Service is implemented separately to showcase the flexibility and ease of swapping dependencies using DI.
 
 ## Project Structure
+
+The project is structured as follows:
 
 - `DAO`: Defines a Data Access Object interface .
 - `Service`: Defines a service that performs computation based on data provided by a DAO (Data Access Object).

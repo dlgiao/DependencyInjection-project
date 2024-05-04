@@ -1,10 +1,10 @@
-# Dependency Injection Example Project
+# Dependency Injection Project
 
 This project demonstrates the concept of Dependency Injection (DI) in JavaScript/Node.js.
 
 ## Overview
 
-The project consists of two versions (V1 and V2) of DAO (Data Access Object) and Service implementations.
+The project consists of two versions (MAS and HR) of DAO (Data Access Object) and Service implementations.
 
 - **DAO (Data Access Object)**: Interface representing data access.
 - **Service**: Interface representing a service performing calculations based on data provided by a DAO.
@@ -13,25 +13,15 @@ Each version of the DAO and Service is implemented separately to showcase the fl
 
 ## Project Structure
 
-This structure outlines the layout of the project:
+The project is structured as follows:
 
-- **V1**: Contains version 1 implementations of DAO and Service.
-    - **dao**: Directory for DAO implementation files.
-        - `DAOImplV1.js`: Implementation of DAO interface for version 1.
-    - **service**: Directory for Service implementation files.
-        - `ServiceImplV1.js`: Implementation of Service interface for version 1.
-- **V2**: Contains version 2 implementations of DAO and Service.
-    - **dao**: Directory for DAO implementation files.
-        - `DAOImplV2.js`: Implementation of DAO interface for version 2.
-    - **service**: Directory for Service implementation files.
-        - `ServiceImplV2.js`: Implementation of Service interface for version 2.
-- **api**: Contains interface definitions for DAO and Service.
-    - `DAO.js`: Interface definition for DAO.
-    - `Service.js`: Interface definition for Service.
-- **main.js**: Main script file to demonstrate the usage of different implementations.
-
-This structure allows for easy navigation and organization of the project's components.
-
+- `DAO`: Defines a Data Access Object interface .
+- `Service`: Defines a service that performs computation based on data provided by a DAO (Data Access Object).
+- `DAOImplMAS`: Retrieves a MAS (Maximal Aerobic Speed) data from a DAO.
+- `ServiceImplMAS`: Defines the service computes a percentage of the Maximal Aerobic Speed.
+- `DAOImplHR`: Retrieves a HR max (heart rate) data from a DAO.
+- `ServiceImplHR`: Defines the service computes a percentage of the HR max.
+- `index`: Contains the `main` method to demonstrate the usage of different use cases.
 
 ## Usage
 
@@ -49,13 +39,17 @@ npm install
 npm run start
 ````
 
-This will execute the main script, demonstrating the usage of different versions (V1 and V2) of DAO and Service implementations.
+This will execute the main function in the index.js file, demonstrating the usage of different versions (MAS and HR) of DAO and Service implementations.
 
 ## Dependencies
 
 This project requires:
 
 - Node.js
+
+## Contributions
+
+Contributions to enhance and expand this project are welcome. Feel free to fork the repository, make your changes, and submit a pull request.
 
 ## License
 

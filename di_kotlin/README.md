@@ -1,4 +1,4 @@
-# Dependency Injection Example Project
+# Dependency Injection Project
 
 This project demonstrates the concept of Dependency Injection (DI) in Kotlin using Gradle.
 
@@ -14,6 +14,14 @@ Each version of the DAO and Service is implemented separately to showcase the fl
 ## Project Structure
 
 The project is structured as follows:
+
+- `DAO`: Defines a Data Access Object interface .
+- `Service`: Defines a service that performs computation based on data provided by a DAO (Data Access Object).
+- `DAOImplMAS`: Retrieves a MAS (Maximal Aerobic Speed) data from a DAO.
+- `ServiceImplMAS`: Defines the service computes a percentage of the Maximal Aerobic Speed.
+- `DAOImplHR`: Retrieves a HR max (heart rate) data from a DAO.
+- `ServiceImplHR`: Defines the service computes a percentage of the HR max.
+- `Main`: Contains the `main` method to demonstrate the usage of different use cases.
 ...
 
 ## Usage
@@ -39,6 +47,10 @@ This project requires:
 
 - Kotlin
 - Gradle
+
+## Contributions
+
+Contributions to enhance and expand this project are welcome. Feel free to fork the repository, make your changes, and submit a pull request.
 
 ## License
 
