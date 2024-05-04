@@ -29,9 +29,10 @@ To run the project, follow these steps:
 
 1. Clone this repository.
 2. Navigate to the root directory of the project.
-3. Run the following command:
+3. Run the following commands:
 
 ```bash
+go mod init kmmania.com/di_go
 go run main.go
 ```
 
