@@ -1,4 +1,4 @@
-# Dependency Injection Example Project
+# Dependency Injection Project
 
 This project demonstrates the concept of Dependency Injection (DI) in Go.
 
