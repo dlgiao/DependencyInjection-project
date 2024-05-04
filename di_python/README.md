@@ -40,9 +40,26 @@ python main.py
 ```
 This will execute the main function in the main.py file, demonstrating the usage of different versions (MAS and HR) of DAO and Service implementations.
 
+### Running Unit Tests
+
+Explore the comprehensive unit tests included in the project to ensure reliability and robustness. To execute them using pytest, simply run:
+
+```bash
+pytest test
+```
+
+## Building and Running with Docker
+
+The project includes a Dockerfile for containerization. To build an image and run the project within a container, execute the following commands:
+
+```bash
+docker build -t di_python .
+docker run -it --rm di_python
+```
+
 ## Dependencies
 
-This project requires:
+Ensure the following dependencies are available:
 
 - Python 3
 - pip

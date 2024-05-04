@@ -41,9 +41,26 @@ To run the project, follow these steps:
 ```
 This will execute the main function in the Main.kt file, demonstrating the usage of different versions (MAS and HR) of DAO and Service implementations.
 
+### Running Unit Tests
+
+Explore the comprehensive unit tests included in the project to ensure reliability and robustness. To execute them using Gradle, simply run:
+
+```bash
+./gradlew test
+```
+
+## Building and Running with Docker
+
+The project includes a Dockerfile for containerization. To build an image and run the project within a container, execute the following commands:
+
+```bash
+docker build -t di_kotlin .
+docker run -it --rm di_kotlin
+```
+
 ## Dependencies
 
-This project requires:
+Ensure the following dependencies are available:
 
 - Kotlin
 - Gradle

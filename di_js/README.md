@@ -41,9 +41,26 @@ npm run start
 
 This will execute the main function in the index.js file, demonstrating the usage of different versions (MAS and HR) of DAO and Service implementations.
 
+### Running Unit Tests
+
+Explore the comprehensive unit tests included in the project to ensure reliability and robustness. To execute them using npm, simply run:
+
+```bash
+npm run test
+```
+
+## Building and Running with Docker
+
+The project includes a Dockerfile for containerization. To build an image and run the project within a container, execute the following commands:
+
+```bash
+docker build -t di_js .
+docker run -it --rm di_js
+```
+
 ## Dependencies
 
-This project requires:
+Ensure the following dependencies are available:
 
 - Node.js
 

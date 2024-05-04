@@ -43,9 +43,26 @@ java -jar target/di_java-1.0-SNAPSHOT.jar
 
 This will execute the main method in the Main class, demonstrating the usage of different versions (MAS and HR) of DAO and Service implementations.
 
+### Running Unit Tests
+
+Explore the comprehensive unit tests included in the project to ensure reliability and robustness. To execute them using Maven, simply run:
+
+```bash
+mvn test
+```
+
+## Building and Running with Docker
+
+The project includes a Dockerfile for containerization. To build an image and run the project within a container, execute the following commands:
+
+```bash
+docker build -t di_java .
+docker run -it --rm di_java
+```
+
 ## Dependencies
 
-This project requires:
+Ensure the following dependencies are available:
 
 - Java 8 or higher
 - Apache Maven

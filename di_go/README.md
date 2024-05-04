@@ -37,6 +37,23 @@ go run main.go
 
 This will execute the main function in main.go, demonstrating the usage of different data sources (MAS and HR) and their respective DAO and Service implementations.
 
+### Running Unit Tests
+
+Explore the comprehensive unit tests included in the project to ensure reliability and robustness. To execute them, simply run:
+
+```bash
+go test ./...
+```
+
+## Building and Running with Docker
+
+The project includes a Dockerfile for containerization. To build an image and run the project within a container, execute the following commands:
+
+```bash
+docker build -t di_go .
+docker run -it --rm di_go
+```
+
 ## Dependencies
 
 This project has no external dependencies beyond Go itself.
