@@ -14,12 +14,12 @@ Each version of the DAO and Service is implemented separately to showcase the fl
 ## Project Structure
 
 - `DAO`: Defines a Data Access Object interface .
-- `Service`: Represents a sprinter athlete, utilizing inheritance.
-- `DAOImplMAS`: Represents an athlete specializing in throwing events, utilizing composition.
-- `ServiceImplMAS`: Defines an interface for retrieving an athlete's specialty.
-- `DAOImplHR`: Implements the `AthleteInterface`.
-- `ServiceImplHR`: Represents an athlete specializing in distance running, utilizing composition with interfaces.
-- `Main`: Contains the `main` method to demonstrate the usage of different athlete classes.
+- `Service`: Defines a service that performs computation based on data provided by a DAO (Data Access Object).
+- `DAOImplMAS`: Retrieves a MAS (Maximal Aerobic Speed) data from a DAO.
+- `ServiceImplMAS`: Defines the service computes a percentage of the Maximal Aerobic Speed.
+- `DAOImplHR`: Retrieves a HR max (heart rate) data from a DAO.
+- `ServiceImplHR`: Defines the service computes a percentage of the HR max.
+- `Main`: Contains the `main` method to demonstrate the usage of different use cases.
 
 ## Usage
 
